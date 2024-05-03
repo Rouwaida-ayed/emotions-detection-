@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #f2f2f2, #eee);
+}
+
+.background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-wrapper {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.upload-panel, .image-panel {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(50% - 40px);
+  margin: 20px;
+}
+
+#image-upload {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+label:hover {
+  background-color: #3e8e41;
+}
+
+.image-panel {
+  position: relative;
+}
+
+#preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+#error-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+/* Add this to style.css */
+
+/* Add this to style.css */
+
+.button-panel {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-panel form {
+  margin: 0 10px;
+}
+
+.button-panel input[type="submit"] {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.button-panel input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
