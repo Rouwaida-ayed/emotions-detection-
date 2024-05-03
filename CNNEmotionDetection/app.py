@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 app = Flask(__name__)
 
 # Load the pre-trained model
-model = load_model(r'C:\Users\rouwa\eclipse-workspace\CNN Image classification\HappyOSad.h5')
+model = load_model('HappyOSad.h5')
 
 # Define the image dimensions expected by the model
 img_height, img_width = 48, 48
