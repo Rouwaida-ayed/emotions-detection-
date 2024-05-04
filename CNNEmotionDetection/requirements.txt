@@ -1,3 +1,9 @@
-Flask==2.0.2
-Werkzeug==2.0.2
-opencv-python-headless==4.5.3.56
+Flask
+Werkzeug
+tensorflow
+protobuf
+keras.models
+opencv-python
+numpy
+keras
+keras.preprocessing
